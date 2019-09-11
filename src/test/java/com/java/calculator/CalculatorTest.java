@@ -34,7 +34,7 @@ public class CalculatorTest {
 
 	@Test
 	public void testSum() {
-		int result = calculator.sum(-1, 4);
+		int result = calculator.sum(3, 4);
 
 		assertEquals(7, result);
 	}
@@ -54,16 +54,7 @@ public class CalculatorTest {
 	public void testDivisionException() throws Exception {
 		calculator.divison(10, 0);
 	}
-
-	//@Ignore
-//	@Test
-//	public void testEqual() {
-//		boolean result = calculator.equalIntegers(20, 20);
-//
-//		assertFalse(result);
-//	}
-
-	@Test(expected = AssertionError.class)
+ 	@Test(expected = AssertionError.class)
 	public void testSubstraction() {
 		int result = 10 - 3;
 
